@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation"
 import { Auth } from "@supabase/auth-ui-react"
 import { ThemeSupa } from "@supabase/auth-ui-shared"
 import useAuthModal from "@/hooks/useAuthModal"
+import toast from 'react-hot-toast'
 
 const AuthModal = () => {
     const supabaseClient = useSupabaseClient()
@@ -15,12 +16,15 @@ const AuthModal = () => {
     const onChange=(open:boolean)=>{
         if(!open){
             onClose()
+            
         }
     }
     useEffect(() => {
       if(session){
         router.refresh()
         onClose()
+        toast.success('Logged In')
+       
       }
     }, [session,router,onClose])
     
