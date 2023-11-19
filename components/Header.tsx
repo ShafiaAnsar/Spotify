@@ -31,6 +31,7 @@ const Header:React.FC<HeaderProps> = ({children,className}) => {
       toast.success('Logged out')
     }
   }
+
   return (
     <div className={twMerge(`h-fit bg-gradient-to-b  from-emerald-800 p-6`,className)}>
       <div className="w-full flex mb-4 items-center justify-between">
@@ -46,8 +47,8 @@ const Header:React.FC<HeaderProps> = ({children,className}) => {
           <button className='rounded-full bg-white flex items-center justify-center hover:opacity-75 transition p-2'>
             <HiHome className='text-black' size={20}/>
           </button>
-          <button className='rounded-full bg-white flex items-center justify-center hover:opacity-75 transition p-2'>
-            <BiSearch className='text-black' size={20}/>
+          <button onClick={()=> router.push('/search')} className='rounded-full bg-white flex items-center justify-center hover:opacity-75 transition p-2'>
+            <BiSearch   className='text-black' size={20}/>
           </button>
         </div>
         <div className="flex justify-between items-center gap-x-4 ">
