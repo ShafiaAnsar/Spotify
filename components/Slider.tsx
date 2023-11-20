@@ -22,7 +22,6 @@ const Slider:React.FC<SliderProps> = ({value,onChange}) => {
             <RadixSlider.Range
              className='absolute bg-white rounded-full h-full'
             >
-
             </RadixSlider.Range>
         </RadixSlider.Track>
     </RadixSlider.Root>
