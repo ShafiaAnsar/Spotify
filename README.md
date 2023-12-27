@@ -1,7 +1,5 @@
 # Spotify Clone
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-
 ## Overview
 
 🚀 Welcome to the Spotify Clone, where music meets innovation! This project is not just a replica; it's a revolution in the way we experience music. Users can upload, like, dislike, and curate their unique music libraries.
